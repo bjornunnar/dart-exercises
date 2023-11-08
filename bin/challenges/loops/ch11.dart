@@ -12,7 +12,6 @@
 import 'dart:io';
 
 void main() {
-
   // Yuck, old nasty way
   print('Choose an operation');
   print('[0]: Add');
@@ -27,5 +26,7 @@ void main() {
 
   print('Choose an operation');
   // For loop starts here.
-
+  for (int a = 0; a >= operations.length; a++) {
+    print(operations[a]);
+  }
 }

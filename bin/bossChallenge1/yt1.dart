@@ -9,9 +9,21 @@
    HINT: Use the AND operator && to check two conditions in a row.
  */
 
-
 import 'dart:io';
 
 void main() {
-  print('hello frændi');
+  int step0 = 0;
+  print('Give me a number between 2 and 10');
+  try {
+    step0 = int.parse(stdin.readLineSync().toString());
+  } catch (e) {
+    print("That's not a number!");
+    return;
+  }
+
+  if (step0 > 1 && step0 < 11) {
+    print("Great job on entering the number $step0.");
+  } else {
+    print("You entered the number $step0. Too bad.");
+  }
 }

@@ -5,5 +5,13 @@
 
 import 'dart:io';
 
-void main(){
+void main() {
+  print("Give me two numbers, first one:");
+  int a = int.parse(stdin.readLineSync().toString());
+  print("Second one:");
+  int b = int.parse(stdin.readLineSync().toString());
+
+  String printed = "$a and $b";
+
+  print(printed);
 }

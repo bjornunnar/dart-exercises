@@ -24,15 +24,13 @@
 import 'dart:io';
 
 void main() {
-
   List<String> shoppingList = ['Milk', 'Eggs', 'Sugar', 'Hardfish'];
   int nbrItems = 1;
   int itemsCollected = shoppingList.length; // WOAH! I recognize this!
   for (String item in shoppingList) {
     print('[$nbrItems/$itemsCollected] Fetching $item');
+    nbrItems++;
     // What short-hand can we use to increment nbrItems?
   }
   print('Checkout.');
-
-
 }

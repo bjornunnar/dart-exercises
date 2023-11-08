@@ -17,7 +17,7 @@ import 'dart:io';
 
 void main() {
   print('What should we countdown from?');
-  int countDown = int.parse(stdin.readLineSync());
+  int countDown = int.parse(stdin.readLineSync().toString());
 
   while (countDown >= 0) {
     print(countDown);

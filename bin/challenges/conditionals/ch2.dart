@@ -13,5 +13,37 @@
 import 'dart:io';
 
 void main() {
+  print("Give me a number between 0 and 4");
 
+  int input = int.parse(stdin.readLineSync().toString());
+  var result;
+
+  switch (input) {
+    case 0:
+      {
+        result = "add";
+        break;
+      }
+    case 1:
+      {
+        result = "subtract";
+        break;
+      }
+    case 2:
+      {
+        result = "multiply";
+        break;
+      }
+    case 3:
+      {
+        result = "divide";
+        break;
+      }
+    case 4:
+      {
+        result = "modulo";
+        break;
+      }
+  }
+  print(result);
 }

@@ -21,6 +21,13 @@
 import 'dart:io';
 
 void main() {
-
-
+  bool condition = false;
+  print("Please enter the number '100':");
+  int userNumber = int.parse(stdin.readLineSync().toString());
+  if (userNumber == 100) {
+    condition = true;
+    print("Great job!");
+  } else {
+    print("That was not such a great job.");
+  }
 }

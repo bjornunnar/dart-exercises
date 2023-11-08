@@ -40,10 +40,13 @@ void main() {
 
   if (!isMonday) {
     print("It's not monday!.");
-    for (int lap = 1; lap <= lapsToComplete; lap=lap+1) {
+    for (int lap = 1; lap <= lapsToComplete; lap = lap + 1) {
       print('Coach screams: $lap out of $lapsToComplete!');
     }
   } else {
     print("It's monday!.");
+    for (int lap = 10; lap >= 1; lap--) {
+      print('Coach screams: $lap out of $lapsToComplete!');
+    }
   }
 }
